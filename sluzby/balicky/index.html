@@ -29,7 +29,11 @@
         }
 
         h2 {
-            font-size: 1.4em;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.07em;
         }
 
         /* |___-WS-___| */
@@ -48,7 +52,8 @@
             font-weight: 400;
 
             background-color: aliceblue;
-            
+            /* background: radial-gradient(circle, white, rgba(255, 0, 0, 0.1)); */
+
             box-shadow: 
                 inset 0 0 15px 3px rgba(0, 0, 0, 1);
         }
@@ -72,10 +77,11 @@
         .cont.navi#top {
             padding: 6% 0;
             gap: 7%;
+            padding-right: 6%;
         }
 
         /* |___.CONT-.NAVI-#BOT___| */
-        #bot {
+        .cont.navi#bot {
             padding: 6%;
         }
 
@@ -99,47 +105,54 @@
                 0 0 10px 2px rgba(0, 0, 0, .75);
         }
 
-        #sluzby {
-            background: radial-gradient(circle, white, rgba(255, 0, 0, 0.75));
+        #domu {
+            background: radial-gradient(circle, white, rgba(139, 69, 19, 0.75));
             border-left: none;
             border-radius: 0 20% 20% 0;
         }
-        #produkty {
-            background: radial-gradient(circle, white, rgba(255, 255, 0, 0.75));
-            border-right: none;
-            border-radius: 20% 0  0 20%;
+        #sluzby {
+            background: radial-gradient(circle, white, rgba(255, 0, 0, 0.75));
+            border-radius: 20%;
         }
-        #kontakty {
-            background: radial-gradient(circle, white, rgba(0, 255, 0, 0.75));
+
+        #objednani {
+            background: radial-gradient(circle, white, rgba(255, 127, 0, 0.75));
             border-radius: 20%;
         }
 
         /* |___.CONT-#DISP-___| */
         .cont#disp {
             height: 52%;
+            
+            box-shadow:
+                inset 0 0 15px 3px rgba(0, 0, 0, 1),
+                0 0 10px 2px rgba(0, 0, 0, 1);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
-            border: 7px solid silver;
+            padding: 0;
+            gap: 12%;
+        }
+
+        .link.menu {
+            border: 3px solid silver;
+
+            background: radial-gradient(circle, white, rgba(0, 255, 255, 0.75));
             border-left: none;
             border-right: none;
+        }
 
-            box-shadow:  
-                0 0 10px 2px rgba(0, 0, 0, 1);
+        #balicky {
+            background: radial-gradient(circle, white, rgba(255, 215, 0, 0.75));
+            border-radius: 20%;
+        }
 
-            display: flex;
-            overflow: hidden;
+        #pedikura {
+            border-bottom: 7px solid silver;
         }
         
-        .slide {
-            min-width: 100%;
-            transition: transform 1s ease;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            /* Обрезает края */
-            object-fit: cover;
-        }
     </style>
 </head>
 
@@ -147,43 +160,23 @@
     <div class="ws">
         
         <div class="cont navi" id="top">
-            <a href="sluzby/index.html" class="link" id="sluzby"><h2>služby</h2></a>
-            <a href="#" class="link" id="produkty"><h2>produkty</h2></a>
+            <a href="/Users/bav/0/website-neh-spec/index.html" class="link" id="domu"><h2>domů</h2></a>
+            <a href="../index.html" class="link" id="sluzby"><h2>služby</h2></a>
+            <a href="../balicky/index.html" class="link" id="balicky"><h2>balíčky</h2></a>
         </div>
 
         <div class="cont" id="disp">
-            <div class="slide">
-                <img src="static/img/662x662px.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="static/img/zidle.webp" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="static/img/bile-nehty.webp" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="static/img/vrata.webp" alt="slide">
-            </div>
+            <a href="balicky/index.html" class="link menu" id="balicky"><h3>Zvýhodněné balíčky</h3></a>
+            <a href="#" class="link menu"><h3>Manikúra</h3></a>
+            <a href="#" class="link menu" id="pedikura"><h3>Pedikúra</h3></a>
         </div>
 
         <div class="cont navi" id="bot">
-            <a href="#" class="link" id="kontakty"><h2>kontakty</h2></a>
+            <a href="#" class="link" id="objednani"><h2>objednání</h2></a>
         </div>        
     </div>
     <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
-
-        function showNextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            const offset = -currentIndex * 100;
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(${offset}%)`;
-            });
-        }
-
-        setInterval(showNextSlide, 7000);
+        
     </script>
 </body>
 
