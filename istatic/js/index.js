@@ -1,14 +1,25 @@
+// Текущая позиция слайда
+let startPositionX = 0; 
 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+// Все слайды
+const tagsSlide = document.querySelectorAll('.slide'); 
 
+// Общее количество слайдов
+const totalSlides = tagsSlide.length; 
+
+// Функция для показа следующего слайда
 function showNextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    const offset = -currentIndex * 100;
-    slides.forEach(slide => {
-        slide.style.transform = `translateX(${offset}%)`;
+    // Переход к следующему слайду (циклично)
+    startPositionX = (startPositionX + 1) % totalSlides; 
+    
+    // Рассчет смещения в процентах
+    const offset = -startPositionX * 100; 
+    
+    // Применение смещения к каждому слайду
+    tagsSlide.forEach(slide => {
+        slide.style.transform = `translateX(${offset}%)`; 
     });
 }
 
-setInterval(showNextSlide, 7000);
+// Автоматическое переключение слайдов каждые 7 секунд
+setInterval(showNextSlide, 7000); 
