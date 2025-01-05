@@ -70,6 +70,7 @@ body {
 	height: 61.8%;
 
 	display: flex;
+	/* overflow: hidden; */
 }
 
 /* ----- f-bot ----- */
@@ -96,6 +97,7 @@ body {
 
 .slide {
 	min-width: 100%;
+	transition: transform 2s ease-out;
 }
 
 .slide img {
