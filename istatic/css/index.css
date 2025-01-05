@@ -70,7 +70,7 @@ body {
 	height: 61.8%;
 
 	display: flex;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 /* ----- f-bot ----- */
