@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+
+<html 
+    lang="cs">
+
+<head>
+    <title> Nehtový Specialista </title>
+
+    <meta 
+        charset="UTF-8">
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+
+    <!-- f-fonts -->
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- f-CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* cначала была тьма */
+            background-color: black;
+
+            /* Великое расширение */
+            width: 100dvw;
+            height: 100dvh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.75em;
+        }
+
+        /* --- f-ws ------------------------------------------------------------- */
+        .ws {
+            background: rgb(
+                1, 111, 111
+            );
+
+            width: 100%;
+            height: 100%;
+
+            max-width: 640px;
+
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* --- f-top --------------------------------------------------------- */
+        .top {
+            border-top: 5px solid rgb(
+                75, 75, 75
+            );
+
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        215, 235, 255, .5
+                    )
+                );
+
+            box-shadow: 
+                inset 0 -3px 15px 3px;
+
+            width: 100%;
+            height: 19.1%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* --- f-butt.top ------------------------------------------------- */
+        .butt.top {
+            border: 3px solid rgb(
+                125, 125, 125
+            );
+            
+            border-radius: 20%;
+
+            box-shadow: 
+                inset 0 0 15px 5px, 
+                    0 0 10px 2px;
+            
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+
+            width: 38.2%;
+            height: 61.8%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sluzby {
+            border-left: none;
+            border-radius: 0 20% 20% 0;
+            
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        255, 0, 0, .75
+                    )
+                );
+        }
+
+        #produkty {
+            border-right: none;
+            border-radius: 20% 0 0 20%;
+
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        255, 255, 0, .75
+                    )
+                );
+        }
+        /* --- e-butt.top ------------------------------------------------- */
+
+        /* --- e-top --------------------------------------------------------- */
+
+
+        /* --- f-dis --------------------------------------------------------- */
+        .dis {
+            border-top: 8px solid rgb(
+                175, 175, 175
+                );
+	        border-bottom: 8px solid rgb(
+                175, 175, 175
+            );
+
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        215, 235, 255, .5
+                    )
+                );
+            
+            width: 100%;
+            height: 61.8%;
+
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* --- f-slide ---------------------------------------------------- */
+        .slide {
+            min-width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* --- e-slide ---------------------------------------------------- */
+        /* --- e-dis --------------------------------------------------------- */
+
+
+        /* --- f-bot --------------------------------------------------------- */
+        .bot {
+            border-bottom: 5px solid rgb(
+                75, 75, 75
+            );
+
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        215, 235, 255, .5
+                    )
+                );
+            
+            box-shadow: 
+                inset 0 3px 15px 3px;
+
+            width: 100%;
+            height: 19.1%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* --- f-butt.bot ------------------------------------------------- */
+        .butt.bot {
+            border: 3px solid rgb(
+                125, 125, 125
+            );
+            border-radius: 20%;
+
+            box-shadow: 
+                inset 0 0 15px 5px, 
+                    0 0 10px 2px;
+            
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+
+            width: 61.8%;
+            height: 61.8%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #kontakty {
+            background: 
+                radial-gradient(
+                    circle, white, rgba(
+                        0, 255, 0, .75
+                    )
+                );
+        }
+        /* --- e-butt.bot ------------------------------------------------- */
+        /* --- e-bot --------------------------------------------------------- */
+        /* --- e-ws ------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+<!-- --- f-ws ------------------------------------------------------------- -->
+    <div 
+        class="ws">
+
+<!-- --- f-top --------------------------------------------------------- -->
+        <div 
+            class="top">
+
+            <a 
+                href="#"
+                class="butt top"
+                id="sluzby">
+
+                <h1>služby</h1>
+            </a>
+
+            <a 
+                href="#"
+                class="butt top"
+                id="produkty">
+
+                <h1>produkty</h1>
+            </a>
+
+        </div>
+<!-- --- e-top --------------------------------------------------------- -->
+
+
+<!-- --- f-dis --------------------------------------------------------- -->
+        <div 
+            class="dis">
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipM0a4IXO5kkMJFEozJOnPq1uWuZbR79MIKD4OX-=s1360-w1360-h1020"
+                    alt="working-space"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipOajQTByzU6ajk6fFzFsbqzkRI3iHhtZGNaclSQ=s1360-w1360-h1020-rw"
+                    alt="working-space-manikure"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipNejowPO3TGHAI3Od474I1y86DvFxJjcqJxlA-K=s1360-w1360-h1020-rw"
+                    alt="in-working-manikure"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipO5bwZb5t5BSZ2aRGZl3-k1zaG1VMWp86xg49_d=s1360-w1360-h1020-rw"
+                    alt="exampe-mani-royal"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipNmO2k2jeh0sUKnVgSFKfeFtmKtKn8puqE6kMrc=s1360-w1360-h1020-rw"
+                    alt="example-mani-tender"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipMXf2Cu4ijoSGXoChOdEiufert_wYJ9jxts3-Rr=s1360-w1360-h1020-rw"
+                    alt="example-mani-orange-jeans"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipPv9Juhf6_zSN_COA4YjnQ1GDLABE_sBejZ0fRr=s1360-w1360-h1020-rw"
+                    alt="working-space-pedikure"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipMAJTdeHTuF0WdIzZwh3y2C54w5qxha29x9OGpS=s1360-w1360-h1020-rw"
+                    alt="example-pedi-black"
+                >
+            </div>
+
+            <div class="slide">
+                <img
+                    src="https://lh3.googleusercontent.com/p/AF1QipMfcWEfbhn8mt6Q-T1tjKOMz-zpvxkhp71Ahp-i=s1360-w1360-h1020-rw"
+                    alt="example-pedi-black"
+                >
+            </div>
+
+        </div>
+<!-- --- e-dis --------------------------------------------------------- -->
+
+
+<!-- --- f-bot --------------------------------------------------------- -->
+        <div 
+            class="bot">
+
+            <a 
+                href="#"
+                class="butt bot"
+                id="kontakty">
+
+                <h1>kontakty</h1>
+            </a>
+
+        </div>
+<!-- --- e-bot --------------------------------------------------------- -->
+    </div>
+<!-- --- script -------------------------------------------------------- -->
+    <script>
+        // Первый слайд
+        let startPositionX = 0; 
+
+        // Все слайды
+        const tagsSlide = document.querySelectorAll('.slide'); 
+
+        // Общее количество слайдов
+        const totalSlides = tagsSlide.length; 
+
+        // Следующий слайд
+        function showNextSlide() {
+            // Переход (циклично)
+            startPositionX = (startPositionX + 1) % totalSlides; 
+            
+            // В процентах
+            const offset = -startPositionX * 100; 
+            
+            // Применение смещения к каждому слайду
+            tagsSlide.forEach(slide => {
+                slide.style.transform = `translateX(${offset}%)`; 
+            });
+        }
+
+        // Каждые 7 секунд
+        setInterval(showNextSlide, 7000); 
+    </script>
+<!-- --- script -------------------------------------------------------- -->
+<!-- --- e-ws ------------------------------------------------------------- -->
+</body>
+
+</html>
