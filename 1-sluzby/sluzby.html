@@ -46,7 +46,7 @@
         }
 
         h1 {
-            font-size: 1.65em;
+            font-size: 1.75em;
         }
 
         /* --- f-ws ------------------------------------------------------------- */
@@ -130,14 +130,14 @@
                 );
         }
 
-        #produkty {
+        #domu {
             border-right: none;
             border-radius: 20% 0 0 20%;
 
             background: 
                 radial-gradient(
                     circle, white, rgba(
-                        255, 255, 0, .75
+                        139, 69, 19, .75
                     )
                 );
         }
@@ -178,6 +178,69 @@
             object-fit: cover;
         }
         /* --- e-slide ---------------------------------------------------- */
+
+        /* --- f-slide.d -------------------------------------------------- */
+        .slide.d {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 12% 0;
+            gap: 12%;
+        }
+        /* --- f-butt.d ------------------------------------------------ */
+        .butt.d {
+            border: 1.8px solid rgb(
+                125, 125, 125
+            );
+            border-radius: 20%;
+
+            box-shadow: 
+                inset 0 0 15px 5px, 
+                    0 0 10px 2px;
+            
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+
+            width: 61.8%;
+            height: 61.8%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #balicky {
+            background: 
+		        radial-gradient(
+                    circle, white, rgba(
+                        255, 235, 0, 1
+                    )
+                );
+        }
+        #manikura {
+            background: 
+		        radial-gradient(
+                    circle, white, rgba(
+                        0, 255, 255, 1
+                    )
+                );
+        }
+        #pedikura {
+            background: 
+		        radial-gradient(
+                    circle, white, rgba(
+                        0, 255, 255, 1
+                    )
+                );
+        }
+        /* --- e-butt.d ------------------------------------------------ */
+        /* --- e-slide.d -------------------------------------------------- */
         /* --- e-dis --------------------------------------------------------- */
 
 
@@ -204,7 +267,7 @@
             justify-content: center;
             align-items: center;
         }
-
+        
         /* --- f-butt.bot ------------------------------------------------- */
         .butt.b {
             border: 3px solid rgb(
@@ -228,11 +291,11 @@
             align-items: center;
         }
 
-        #kontakty {
+        #objednani {
             background: 
                 radial-gradient(
                     circle, white, rgba(
-                        0, 255, 0, .75
+                        255, 128, 0, .75
                     )
                 );
         }
@@ -252,7 +315,7 @@
             class="top">
 
             <a 
-                href="1-sluzby/sluzby.html"
+                href="#"
                 class="butt t"
                 id="sluzby">
 
@@ -260,11 +323,11 @@
             </a>
 
             <a 
-                href="#"
+                href="../index.html"
                 class="butt t"
-                id="produkty">
+                id="domu">
 
-                <h1>produkty</h1>
+                <h1>domů</h1>
             </a>
 
         </div>
@@ -275,67 +338,31 @@
         <div 
             class="dis">
 
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipM0a4IXO5kkMJFEozJOnPq1uWuZbR79MIKD4OX-=s1360-w1360-h1020"
-                    alt="working-space"
-                >
-            </div>
+            <div class="slide d">
+                <a 
+                    href="#"
+                    class="butt d"
+                    id="balicky">
 
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipOajQTByzU6ajk6fFzFsbqzkRI3iHhtZGNaclSQ=s1360-w1360-h1020-rw"
-                    alt="working-space-manikure"
-                >
-            </div>
+                    <h2>zvýhodněné balíčky</h2>
+                </a>
 
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipNejowPO3TGHAI3Od474I1y86DvFxJjcqJxlA-K=s1360-w1360-h1020-rw"
-                    alt="in-working-manikure"
-                >
-            </div>
+                <a 
+                    href="#"
+                    class="butt d"
+                    id="manikura">
+    
+                    <h2>manikúra</h2>
+                </a>
 
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipO5bwZb5t5BSZ2aRGZl3-k1zaG1VMWp86xg49_d=s1360-w1360-h1020-rw"
-                    alt="exampe-mani-royal"
-                >
-            </div>
+                <a 
+                    href="#"
+                    class="butt d"
+                    id="pedikura">
+    
+                    <h2>pedikúra</h2>
+                </a>
 
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipNmO2k2jeh0sUKnVgSFKfeFtmKtKn8puqE6kMrc=s1360-w1360-h1020-rw"
-                    alt="example-mani-tender"
-                >
-            </div>
-
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipMXf2Cu4ijoSGXoChOdEiufert_wYJ9jxts3-Rr=s1360-w1360-h1020-rw"
-                    alt="example-mani-orange-jeans"
-                >
-            </div>
-
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipPv9Juhf6_zSN_COA4YjnQ1GDLABE_sBejZ0fRr=s1360-w1360-h1020-rw"
-                    alt="working-space-pedikure"
-                >
-            </div>
-
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipMAJTdeHTuF0WdIzZwh3y2C54w5qxha29x9OGpS=s1360-w1360-h1020-rw"
-                    alt="example-pedi-black"
-                >
-            </div>
-
-            <div class="slide">
-                <img
-                    src="https://lh3.googleusercontent.com/p/AF1QipMfcWEfbhn8mt6Q-T1tjKOMz-zpvxkhp71Ahp-i=s1360-w1360-h1020-rw"
-                    alt="example-pedi-black"
-                >
             </div>
 
         </div>
@@ -349,43 +376,14 @@
             <a 
                 href="#"
                 class="butt b"
-                id="kontakty">
+                id="objednani">
 
-                <h1>kontakty</h1>
+                <h1>objednání</h1>
             </a>
 
         </div>
 <!-- --- e-bot --------------------------------------------------------- -->
     </div>
-<!-- --- script -------------------------------------------------------- -->
-    <script>
-        // Первый слайд
-        let startPositionX = 0; 
-
-        // Все слайды
-        const tagsSlide = document.querySelectorAll('.slide'); 
-
-        // Общее количество слайдов
-        const totalSlides = tagsSlide.length; 
-
-        // Следующий слайд
-        function showNextSlide() {
-            // Переход (циклично)
-            startPositionX = (startPositionX + 1) % totalSlides; 
-            
-            // В процентах
-            const offset = -startPositionX * 100; 
-            
-            // Применение смещения к каждому слайду
-            tagsSlide.forEach(slide => {
-                slide.style.transform = `translateX(${offset}%)`; 
-            });
-        }
-
-        // Каждые 7 секунд
-        setInterval(showNextSlide, 7000); 
-    </script>
-<!-- --- script -------------------------------------------------------- -->
 <!-- --- e-ws ------------------------------------------------------------- -->
 </body>
 
