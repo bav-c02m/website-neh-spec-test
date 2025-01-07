@@ -48,13 +48,10 @@
         h1 {
             font-size: 1.65em;
         }
-        h2 {
-            font-size: 1.35em;
-        }
 
         /* --- f-ws ------------------------------------------------------------- */
         .ws {
-            background: rgb(
+            background-color: rgb(
                 1, 111, 111
             );
 
@@ -115,7 +112,7 @@
             text-transform: capitalize;
             color: black;
 
-            width: 38.2%;
+            width: 100%;
             height: 61.8%;
 
             display: flex;
@@ -123,9 +120,26 @@
             align-items: center;
         }
 
-        #manikura {
+        .butt.t h2 {
+            font-size: 1em;
+        }
+
+        #klasika {
             border-left: none;
             border-radius: 0 20% 20% 0;
+
+            background: 
+		        radial-gradient(
+                    circle, white, rgba(
+                        128, 128, 128, .75
+                    )
+                );
+
+            height: 65%;
+        }
+        
+        #manikura {
+            border-radius: 20%;
 
             background: 
 		        radial-gradient(
@@ -133,8 +147,6 @@
                         0, 255, 255, .75
                     )
                 );
-
-            height: 65%;
         }
 
         #sluzby {
@@ -175,7 +187,7 @@
             background: 
                 radial-gradient(
                     circle, white, rgba(
-                        128, 128, 128, .5
+                        128, 128, 128, .75
                     )
                 );
             
@@ -207,8 +219,8 @@
             justify-content: center;
             align-items: center;
 
-            padding: 12% 0;
-            gap: 13%;
+            padding: 0;
+            gap: 0;
         }
         /* --- f-butt.d ------------------------------------------------ */
         .butt.d {
@@ -225,29 +237,16 @@
             text-transform: capitalize;
             color: black;
 
-            width: 61.8%;
-            height: 61.8%;
+            width: 80%;
+            height: 80%;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #klasika {
-            background: 
-		        radial-gradient(
-                    circle, white, rgba(
-                        128, 128, 128, .9
-                    )
-                );
+            text-align: center;
         }
 
         #gellak {
             background: 
 		        radial-gradient(
-                    circle, white, rgba(
-                        128, 0, 255, 0.9
-                    )
+                    circle, white, rgba(216, 177, 255, 0.9)
                 );
         }
 
@@ -334,6 +333,14 @@
 <!-- --- f-top --------------------------------------------------------- -->
         <div 
             class="top">
+            
+            <a 
+                href="../1.1.1-klasika/klasika.html"
+                class="butt t"
+                id="klasika">
+            
+                <h2>klasika</h2>
+            </a>
 
             <a 
                 href="../1.1-manikura/1.1-manikura.html"
@@ -370,28 +377,18 @@
             <div class="slide d">
 
                 <a 
-                    href="../1.1.1-klasika/klasika.html"
-                    class="butt d"
-                    id="klasika">
-
-                    <h2>klasika</h2>
-                </a>
-                
-                
-                <a 
                     href="#"
                     class="butt d"
                     id="gellak">
                     
-                    <h2>gdwedwededw</h2>
-                </a>
-            
-                <a 
-                    href="#"
-                    class="butt d"
-                    id="nova">
-
-                    <h2>dwedwedwedw</h2>
+                    <h1>Сдесь будет название службы</h1>
+                    <h2>Здесь будет описание службы</h2>
+                    <h3>
+                        1. Классический (обрезной) маникюр
+                        Основан на использовании ножниц и кусачек для удаления кутикулы.
+                        Кутикулу размягчают в ванночке с водой.
+                        Подходит для грубой кожи, но есть риск микротравм.      
+                    </h3>
                 </a>
 
             </div>
