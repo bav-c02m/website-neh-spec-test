@@ -106,9 +106,9 @@ html, body {
 
   display: flex;
   overflow-x: auto;
-  /* white-space: nowrap;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 50%; */
+  white-space: nowrap;
+  /* scroll-snap-type: x mandatory; */
+  /* scroll-padding: 0 50%; */
 }
 
 /* --- fslide ----------------------- */
