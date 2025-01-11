@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: black;
+
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --- fmain ----------------------------- */
+.main {
+  background-color: rgb(
+    1, 43, 54
+    )
+  ;
+
+  width: 100dvw;
+  height: 100dvh;
+
+  max-width: 888px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+/* --- fmain ----------------------------- */
+
+
+/* --- ftop --------------------------- */
+.top {
+  border-top: 5px solid rgb(
+    75, 75, 75
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 220, 255, 0.5)
+    )
+  ;
+
+  box-shadow: inset
+    0 -4px 16px 4px
+  ;
+
+  width: 100%;
+  height: 19.1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* --- etop --------------------------- */
+
+
+/* --- fmid --------------------------- */
+.mid {
+  border-top: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+  
+  border-bottom: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 220, 255, 0.25)
+    )
+  ;
+
+  box-shadow: inset
+    0 0 16px 4px
+  ;
+  
+  width: 100%;
+  height: 61.8%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --- emid --------------------------- */
+
+
+/* --- fbot --------------------------- */
+.bot {
+  border-bottom: 5px solid rgb(
+    75, 75, 75
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 220, 255, 0.5)
+    )
+  ;
+
+  box-shadow: inset
+    0 4px 16px 4px
+  ;
+
+  width: 100%;
+  height: 19.1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* --- ebot --------------------------- */
