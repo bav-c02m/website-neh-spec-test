@@ -16,22 +16,6 @@ html, body {
   align-items: center;
 }
 
-img.fullscreen {
-  position: fixed; /* Обеспечиваем закрепление на экране */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.9); /* Затемненный фон */
-  cursor: zoom-out; /* Указывает, что клик вернет изображение */
-  transition: transform 0.3s ease; /* Анимация появления */
-}
-body.noscroll {
-  overflow: hidden; /* Блокируем скроллинг */
-}
-
 
 /* --- fmain ----------------------------- */
 .main {
@@ -122,6 +106,26 @@ body.noscroll {
 }
 /* --- ebot --------------------------- */
 
+.zoom.fullscreen {
+  background-color: rgba(
+    0, 0, 0, 0.9
+    )
+  ;
+  border: none;
+  border-radius: 0;
+
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: contain;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  /* cursor: zoom-out; */
+  /* transition: transform 10s ease; */
+}
 
 /* --- fmid --------------------------- */
 .mid {
@@ -156,8 +160,6 @@ body.noscroll {
 }
 /* --- ftracker --------------------- */
 .tracker {
-  border: 2px solid red;
-
   width: 100%;
   height: 100%;
 
@@ -169,8 +171,6 @@ body.noscroll {
 }
 /* --- ftoright ------------------- */
 .toright-slide {
-  border: 3px solid green;
-
   box-shadow: inset
     0 -4px 16px 4px
   ;
@@ -204,13 +204,10 @@ body.noscroll {
 
   width: 100%;
   height: 100%;
-  
 }
 /* --- etoright ------------------- */
 /* --- fcenter -------------------- */
 .center-slide {
-  border: 3px solid violet;
-
   box-shadow: inset
     0 -4px 16px 4px
   ;
@@ -240,7 +237,7 @@ body.noscroll {
 
   width: 100%;
   height: 100%;
-  
+  object-fit: cover;
 }
 /* --- fcenter -------------------- */
 /* --- etracker --------------------- */
