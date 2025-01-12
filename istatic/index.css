@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,22 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+img.fullscreen {
+  position: fixed; /* Обеспечиваем закрепление на экране */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9); /* Затемненный фон */
+  cursor: zoom-out; /* Указывает, что клик вернет изображение */
+  transition: transform 0.3s ease; /* Анимация появления */
+}
+body.noscroll {
+  overflow: hidden; /* Блокируем скроллинг */
 }
 
 
@@ -73,61 +90,6 @@ html, body {
 /* --- etop --------------------------- */
 
 
-/* --- fmid --------------------------- */
-.mid {
-  border-top: 8px solid rgb(
-    175, 175, 175
-    )
-  ;
-  
-  border-bottom: 8px solid rgb(
-    175, 175, 175
-    )
-  ;
-
-  background-color: rgb(
-    1, 111, 111
-    )
-  ;
-
-  background-image: radial-gradient(
-    circle, 
-    white, 
-    rgba(0, 220, 255, 0.25)
-    )
-  ;
-
-  box-shadow: inset
-    -4px -4px 16px 4px
-  ;
-  
-  width: 100%;
-  height: 61.8%;
-
-  display: flex;
-
-  overflow-x: auto;
-  white-space: nowrap;
-
-  scroll-snap-type: x mandatory;
-}
-
-.pre-slide {
-  border: 2px solid red;
-
-  min-width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  scroll-snap-align: center;
-}
-
-/* --- emid --------------------------- */
-
-
 /* --- fbot --------------------------- */
 .bot {
   border-bottom: 5px solid rgb(
@@ -159,3 +121,127 @@ html, body {
   align-items: center;
 }
 /* --- ebot --------------------------- */
+
+
+/* --- fmid --------------------------- */
+.mid {
+  border-top: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+  
+  border-bottom: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 128, 255, 0.25)
+    )
+  ;
+  
+  width: 100%;
+  height: 61.8%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --- ftracker --------------------- */
+.tracker {
+  border: 2px solid red;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+/* --- ftoright ------------------- */
+.toright-slide {
+  border: 3px solid green;
+
+  box-shadow: inset
+    0 -4px 16px 4px
+  ;
+
+  min-width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+
+  scroll-snap-align: start;
+}
+
+.toright-slide img {
+  border: 3px solid rgb(
+    200, 200, 200
+    )
+  ;
+  border-left: none;
+  
+  border-radius: 0 10% 10% 0;
+
+  box-shadow: 
+    0 0 6px 2px
+  ;
+
+  width: 100%;
+  height: 100%;
+  
+}
+/* --- etoright ------------------- */
+/* --- fcenter -------------------- */
+.center-slide {
+  border: 3px solid violet;
+
+  box-shadow: inset
+    0 -4px 16px 4px
+  ;
+
+  min-width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5%;
+
+  scroll-snap-align: start;
+}
+
+.center-slide img {
+  border: 3px solid rgb(
+    200, 200, 200
+    )
+  ;
+  border-radius: 10%;
+
+  box-shadow: 
+    0 0 6px 2px
+  ;
+
+  width: 100%;
+  height: 100%;
+  
+}
+/* --- fcenter -------------------- */
+/* --- etracker --------------------- */
+/* --- emid --------------------------- */
