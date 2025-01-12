@@ -110,7 +110,6 @@ html, body {
   white-space: nowrap;
 
   scroll-snap-type: x mandatory;
-  scroll-padding: 50%;
 }
 
 .pre-slide {
@@ -122,13 +121,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* scroll-snap-align: center; */
+  
+  scroll-snap-align: center;
 }
 
-.pre-slide img {
-
-}
 /* --- emid --------------------------- */
 
 
