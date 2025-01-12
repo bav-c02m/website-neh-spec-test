@@ -1,4 +1,4 @@
 function zoomImg(event) {
-    const imgs = event.target;
-    imgs.classList.toggle("fullscreen")
+    const img = event.target;
+    img.classList.toggle("fullscreen")
 }
