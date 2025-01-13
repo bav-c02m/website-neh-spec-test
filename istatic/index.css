@@ -124,7 +124,7 @@ html, body {
   z-index: 100;
 
   /* cursor: zoom-out; */
-  transition: all 1s ease;
+  transition: all 0.75s ease;
 }
 
 /* --- fmid --------------------------- */
