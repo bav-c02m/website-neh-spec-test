@@ -116,7 +116,7 @@ html, body {
 
   width: 100dvw;
   height: 100dvh;
-  object-fit: contain;
+  object-fit: cover;
 
   position: fixed;
   top: 0;
@@ -124,7 +124,7 @@ html, body {
   z-index: 100;
 
   /* cursor: zoom-out; */
-  transition: all 0.75s ease;
+  transition: all 1s ease;
 }
 
 /* --- fmid --------------------------- */
