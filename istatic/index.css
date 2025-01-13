@@ -116,7 +116,7 @@ html, body {
 
   width: 100dvw;
   height: 100dvh;
-  object-fit: cover;
+  object-fit: contain;
 
   position: fixed;
   top: 0;
