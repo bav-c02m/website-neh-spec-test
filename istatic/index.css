@@ -155,7 +155,6 @@ html, body {
   height: 100%;
 
   animation: pulse 2.5s linear 3;
-  -webkit-animation: pulse 2.5s linear 3;
 }
 /* --- etoright ------------------- */
 
