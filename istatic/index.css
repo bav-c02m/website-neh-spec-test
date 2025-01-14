@@ -104,37 +104,37 @@ html, body {
 
 @keyframes pulse {
   0% {
-    box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 0px 5px rgba(238, 255, 56, 0.2);
   }
   10% {
-    box-shadow: 6px 0px 6px rgba(25, 25, 25, 0.29);
+    box-shadow: 8px 0px 5px rgba(25, 25, 25, 0.29);
   }
   20% {
-    box-shadow: 6px 0px 6px rgba(50, 50, 50, 0.38);
+    box-shadow: 8px 0px 5px rgba(50, 50, 50, 0.38);
   }
   30% {
-    box-shadow: 6px 0px 6px rgba(75, 75, 75, 0.47);
+    box-shadow: 8px 0px 5px rgba(75, 75, 75, 0.47);
   }
   40% {
-    box-shadow: 6px 0px 6px rgba(100, 100, 100, 0.56);
+    box-shadow: 8px 0px 5px rgba(100, 100, 100, 0.56);
   }
   50% {
-    box-shadow: 6px 0px 6px rgba(128, 128, 128, 0.75);
+    box-shadow: 8px 0px 5px rgba(128, 128, 128, 0.75);
   }
   60% {
-    box-shadow: 6px 0px 6px rgba(150, 150, 150, 0.64);
+    box-shadow: 8px 0px 5px rgba(150, 150, 150, 0.64);
   }
   70% {
-    box-shadow: 6px 0px 6px rgba(175, 175, 175, 0.73);
+    box-shadow: 8px 0px 5px rgba(175, 175, 175, 0.73);
   }
   80% {
-    box-shadow: 6px 0px 6px rgba(200, 200, 200, 0.82);
+    box-shadow: 8px 0px 5px rgba(200, 200, 200, 0.82);
   }
   90% {
-    box-shadow: 6px 0px 6px rgba(225, 225, 225, 0.91);
+    box-shadow: 8px 0px 5px rgba(225, 225, 225, 0.91);
   }
   100% {
-    box-shadow: 6px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 8px 0px 5px rgba(255, 165, 0, 1);
   }
 }
 
@@ -154,7 +154,16 @@ html, body {
   width: 100%;
   height: 100%;
 
-  animation: pulse 2.5s linear 3;
+  /* имя анимации */
+  animation-name: pulse;
+  /* длительность */
+  animation-duration: 3s;
+  /* кривая скорости */
+  animation-timing-function: linear;
+  /* количество циклов */
+  animation-iteration-count: infinite;
+  /* пауза */
+  /* animation-delay: 3s; */
 }
 /* --- etoright ------------------- */
 
