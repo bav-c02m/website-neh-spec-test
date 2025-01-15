@@ -163,7 +163,7 @@ html, body {
   /* количество циклов */
   animation-iteration-count: infinite;
   /* пауза */
-  /* animation-delay: 3s; */
+  animation-delay: 3s;
 }
 /* --- etoright ------------------- */
 
@@ -185,6 +185,54 @@ html, body {
   scroll-snap-align: start;
 }
 
+@keyframes pulse-center {
+  0% {
+    box-shadow: 0 0 5px 8px rgba(238, 255, 56, 0.2);
+  }
+  10% {
+    box-shadow: 0 0 5px 8px rgba(25, 25, 25, 0.29);
+  }
+  20% {
+    box-shadow: 0 0 5px 8px rgba(50, 50, 50, 0.38);
+  }
+  30% {
+    box-shadow: 0 0 5px 8px rgba(75, 75, 75, 0.47);
+  }
+  40% {
+    box-shadow: 0 0 5px 8px rgba(100, 100, 100, 0.56);
+  }
+  50% {
+    box-shadow: 0 0 5px 8px rgba(128, 128, 128, 0.75);
+  }
+  60% {
+    box-shadow: 0 0 5px 8px rgba(150, 150, 150, 0.64);
+  }
+  70% {
+    box-shadow: 0 0 5px 8px rgba(175, 175, 175, 0.73);
+  }
+  80% {
+    box-shadow: 0 0 5px 8px rgba(200, 200, 200, 0.82);
+  }
+  90% {
+    box-shadow: 0 0 5px 8px rgba(225, 225, 225, 0.91);
+  }
+  100% {
+    box-shadow: 0 0 5px 8px rgba(255, 128, 0, 1);
+  }
+}
+
+#first-center-slide img {
+  /* имя анимации */
+  animation-name: pulse-center;
+  /* длительность */
+  animation-duration: 3s;
+  /* кривая скорости */
+  animation-timing-function: linear;
+  /* количество циклов */
+  animation-iteration-count: infinite;
+  /* пауза */
+}
+
 .center-slide img {
   border: 3px solid rgb(
     200, 200, 200
@@ -200,6 +248,7 @@ html, body {
   height: 100%;
   object-fit: cover;
 }
+
 /* --- ecenter ------------------ */
 /* --- etracker ------------------- */
 
