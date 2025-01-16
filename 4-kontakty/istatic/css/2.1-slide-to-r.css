@@ -104,3 +104,7 @@
   animation-iteration-count: 3;
   animation-delay: 5s;
 }
+
+i {
+  font-size: 3em;
+}
