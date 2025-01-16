@@ -69,7 +69,7 @@
   object-fit: cover;
 }
 
-.anim-pulse-center {
+.slide-center-img.anim {
   animation-name: pulse-center;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
