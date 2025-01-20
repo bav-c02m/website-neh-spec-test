@@ -1,0 +1,25 @@
+
+#o-mne {
+  border-left: none;
+  border-radius: 0 15% 15% 0;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(255, 128, 0, .9)
+    )
+  ;
+}
+
+
+#kontakty {
+  border-right: none;
+  border-radius: 15% 0 0 15%;
+
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 255, 0, .9)
+    )
+  ;
+}

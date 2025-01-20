@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  background-color: black;
+
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main {
+  background-color: rgb(
+    1, 43, 54
+    )
+  ;
+
+  width: 100dvw;
+  height: 100dvh;
+
+  max-width: 768px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}

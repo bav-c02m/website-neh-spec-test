@@ -1,4 +1,8 @@
 
+.bot h2 {
+  font-size: 1.3em;
+}
+
 .bot {
   border-bottom: 5px solid rgb(
     75, 75, 75
