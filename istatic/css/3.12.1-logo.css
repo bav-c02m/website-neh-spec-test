@@ -33,15 +33,26 @@ services.arrows {
   background: radial-gradient(
     circle,
     white,
-    rgba(255, 0, 0, 0.9)
+    rgba(255, 0, 0, 0.75)
   );
+
+  box-shadow: inset
+    0 0 3px 1px,
+    0	0	3px 1px
+  ;
 }
+
 .logo.viveska {
   background: radial-gradient(
     circle,
     white,
-    rgba(69, 39, 19, 0.9)
+    rgba(139, 69, 19, 0.75)
   );
+
+  box-shadow: inset
+    0 0 3px 1px,
+    0	0	3px 1px
+  ;
 }
 
 .logo h1 {
