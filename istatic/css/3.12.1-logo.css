@@ -29,6 +29,20 @@
 services.arrows {
   gap: 5%;
 }
+.logo.arrows {
+  background: radial-gradient(
+    circle,
+    white,
+    rgba(255, 0, 0, 0.9)
+  );
+}
+.logo.viveska {
+  background: radial-gradient(
+    circle,
+    white,
+    rgba(69, 39, 19, 0.9)
+  );
+}
 
 .logo h1 {
   font-size: 3em;
