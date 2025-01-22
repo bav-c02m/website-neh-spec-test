@@ -40,6 +40,7 @@ services.arrows {
     0 0 3px 1px,
     0	0	3px 1px
   ;
+  color: rgb(150, 150, 150);
 }
 
 .logo.viveska {
@@ -53,6 +54,8 @@ services.arrows {
     0 0 3px 1px,
     0	0	3px 1px
   ;
+
+  color: rgb(175, 175, 175);
 }
 
 .logo h1 {
