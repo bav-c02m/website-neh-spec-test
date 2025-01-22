@@ -17,12 +17,6 @@
   white-space: nowrap;
 }
 
-.logo h1, h2, h3, h4, h5 {
-  font-family: "Rubik Lines", serif;
-  font-weight: bold;
-  font-style: normal;
-}
-
 .logo h1 {
   font-size: 3em;
 }
