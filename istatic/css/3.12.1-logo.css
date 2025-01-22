@@ -1,5 +1,5 @@
 .logo {
-  border: 2px solid rgb(
+  border: 1.8px solid rgb(
     75, 75, 75
     )
   ;
@@ -12,17 +12,37 @@
 
   padding: 1%;
 
-  width: auto;
-  height: auto;
   white-space: nowrap;
 }
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3%;
+}
+
+.services.galerie {
+  gap: 15%;
+}
+
+.logo.arrow {
+  border-radius: 50%;
+  padding: 3%;
+}
+
+.services.galerie p {
+  font-size: 2.5em;
+}
+
 
 .logo h1 {
   font-size: 3em;
 }
 
 .logo h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .logo h3 {
@@ -31,20 +51,4 @@
 
 .logo h4 {
   font-size: 1em;
-}
-
-.services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1%;
-}
-
-.options {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1%;
 }
