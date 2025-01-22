@@ -20,11 +20,11 @@
   justify-content: center;
   align-items: center;
 
-  gap: 7%;
+  gap: 3%;
 }
 
 .services.galerie {
-  gap: 21%;
+  gap: 10%;
 }
 
 .logo h1 {
