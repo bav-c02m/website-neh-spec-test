@@ -24,10 +24,10 @@
 }
 
 .services.galerie {
-  gap: 10%;
+  gap: 11%;
 }
 services.arrows {
-  gap: 5%;
+  gap: 7%;
 }
 .logo.arrows {
   background: radial-gradient(
@@ -40,10 +40,9 @@ services.arrows {
     0 0 3px 1px,
     0	0	3px 1px
   ;
-  color: rgb(25, 25, 25);
 }
 
-.logo.viveska {
+.logo.board {
   background: radial-gradient(
     circle,
     white,
@@ -54,8 +53,6 @@ services.arrows {
     0 0 3px 1px,
     0	0	3px 1px
   ;
-
-  color: rgb(50, 50, 50);
 }
 
 .logo h1 {
