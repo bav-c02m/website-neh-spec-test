@@ -1,0 +1,83 @@
+
+.main {
+  background: rgb(1, 44, 55);
+
+  width: 100dvw;
+  height: 100dvh;
+
+  max-width: 768px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.in-main {
+  border-top: 5px solid rgb(
+    100, 100, 100
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(2, 222, 255, 0.7)
+    )
+  ;
+
+  box-shadow: inset
+    0 -3px 15px 3px
+  ;
+
+  width: 100%;
+  height: 19.1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bot {
+  border-top: none;
+  border-bottom: 5px solid rgb(
+    100, 100, 100
+    )
+  ;
+
+  box-shadow: inset
+    0 3px 15px 3px
+  ;
+}
+
+.mid {
+  border-top: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+  border-bottom: 8px solid rgb(
+    175, 175, 175
+    )
+  ;
+
+  background-color: rgb(
+    1, 111, 111
+    )
+  ;
+  background-image: radial-gradient(
+    circle, 
+    white, 
+    rgba(0, 128, 255, 0.25)
+    )
+  ;
+
+  box-shadow: none;
+  
+  height: 61.8%;
+
+  justify-content: center;
+}
