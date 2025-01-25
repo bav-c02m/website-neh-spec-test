@@ -1,0 +1,33 @@
+
+.card-right {
+  border: 1.8px solid rgb(
+    200, 200, 200
+    )
+  ;
+  border-left: none;
+  border-radius: 0 5% 5% 0;
+
+  background: radial-gradient(
+    circle, 
+    white, 
+    rgba(250, 240, 220, 0.9)
+    )
+  ;
+
+  box-shadow: inset
+    0 0 3px 1px,
+    2px 0 6px 2px
+  ;
+
+  width: 100%;
+  height: 100%;
+  
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 3%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
