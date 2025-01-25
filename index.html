@@ -22,7 +22,8 @@
 	<link rel="stylesheet" href="istatic/css/5-card-right.css">
 	<link rel="stylesheet" href="istatic/css/5.1-logo.css">
 	<link rel="stylesheet" href="istatic/css/6-slide-center.css">
-	<link rel="stylesheet" href="istatic/css/7-img-center.css">
+	<link rel="stylesheet" href="istatic/css/6.1-img-first.css">
+	<link rel="stylesheet" href="istatic/css/6.2-img.css">
 </head>
 
 <body>
@@ -58,9 +59,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide-center">
+				<div class="slide-center-first">
 					<p class="zoom-msg">Kliknutím na obrázek jej zvětšíte na celou obrazovku.</p>
-					<img src="istatic/img/1536x2048-kresla.jpg" alt="kresla">
+					<img src="istatic/img/1536x2048-kresla.jpg" onclick="zoomImg(event)" alt="kresla">
+				</div>
+				<div class="slide-center">
+					<img src="istatic/img/1536x2048-kresla.jpg" onclick="zoomImg(event)" alt="kresla">
 				</div>
 			</div>
 		</div>
@@ -70,6 +74,7 @@
 			<a href="#" class="butts kontakty"><p>Kontakty</p></a>
 		</div>
 	</div>
+	<script src="istatic/js/0-fullscreen.js"></script>
 </body>
 
 </html>
@@ -77,4 +82,4 @@
 <!-- 
 Á Ć Č Ď É Ě Í Ň Ó Ř Š Ť Ú Ů Ý Ž
 á č ď é ě í ň ó ř š ť ú ů ý ž
- -->
+-->
