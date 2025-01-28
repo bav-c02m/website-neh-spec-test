@@ -36,7 +36,7 @@
 		<div class="in-main mid">
 			<div class="tracker-x">
 				<div class="slide-right">
-					<div class="card-right">
+					<div class="card-right" onclick="scrollX(event)">
 						<div class="logo-conts table">
 							<p class="bystrova">BYSTROVÁ</p>
 							<p class="neh-spec">NEHTOVÝ SPECIALISTA</p>
@@ -44,7 +44,7 @@
 						<div class="logo-conts services">
 							<p class="serv-opt">mani/pedikúra</p>
 							<p class="serv-opt">modeláž</p>
-							<p class="serv-opt">zdobení</p>
+							<p class="serv-opt">školení</p>
 						</div>
 						<div class="logo-conts options">
 							<p class="serv-opt">Wi-Fi</p>
@@ -59,12 +59,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide-center-first">
+				<div class="slide-center-first" id="scroll-x">
 					<p class="zoom-msg">Kliknutím na obrázek jej zvětšíte na celou obrazovku.</p>
-					<img src="istatic/img/1536x2048-kresla.jpg" onclick="zoomImg(event)" alt="kresla">
+					<img src="istatic/img/662x662px.jpg" alt="kresla"
+						onclick="zoomImg(event)"
+					>
 				</div>
 				<div class="slide-center">
-					<img src="istatic/img/1536x2048-kresla.jpg" onclick="zoomImg(event)" alt="kresla">
+					<img src="istatic/img/1536x2048-kresla.jpg" alt="kresla"
+						onclick="zoomImg(event)"
+					>
 				</div>
 			</div>
 		</div>
@@ -75,6 +79,7 @@
 		</div>
 	</div>
 	<script src="istatic/js/0-fullscreen.js"></script>
+	<script src="istatic/js/1-scroll-x.js"></script>
 </body>
 
 </html>
