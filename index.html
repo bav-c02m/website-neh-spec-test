@@ -59,8 +59,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide-center-first" id="scroll-x">
-					<p class="zoom-msg">Kliknutím na obrázek jej zvětšíte na celou obrazovku.</p>
+				<div class="slide-center-first" id="second-slide">
+					<p class="zoom-teacher">Kliknutím na obrázek jej zvětšíte na celou obrazovku.</p>
 					<img src="istatic/img/662x662px.jpg" alt="kresla"
 						onclick="zoomImg(event)"
 					>
@@ -79,7 +79,20 @@
 		</div>
 	</div>
 	<script src="istatic/js/0-fullscreen.js"></script>
-	<script src="istatic/js/1-scroll-x.js"></script>
+	<script src="istatic/js/1-second-slide.js"></script>
+	<script>
+		const username = "111"; // Имя пользователя
+		const password = "222"; // Пароль
+	
+		const userInput = prompt("Введите имя пользователя:");
+		const passwordInput = prompt("Введите пароль:");
+	
+		if (userInput !== username || passwordInput !== password) {
+			alert("Доступ запрещен");
+			window.location.href = "about:blank"; // Перенаправление на пустую страницу
+		}
+	</script>
+	
 </body>
 
 </html>
